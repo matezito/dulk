@@ -10,7 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .bg-dark {
-  background: #1e1e1e !important;
+  background-color: #1e1e1e !important;
 }
 body.black {
   color: white;
@@ -19,7 +19,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 600;
+  font-weight: 700;
 }
 a.nav-link.active{
     font-weight: 600;
@@ -42,4 +42,9 @@ img.img-fluid.logo-footer {
 }
 .btn-light{
   border: 1px solid black;
+}
+.body-home{
+  background-image: url('./assets/images/backgound2-8.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
