@@ -1,12 +1,10 @@
 $(document).ready(function(){
     $('.cast-carousel').slick({
-        infinite: true,
+        centerPadding: '60px',
         slidesToShow: 4,
         slidesToScroll: 4,
         autoplay: true,
         autoplaySpeed: 5000,
-        fade: true,
-        cssEase: 'linear',
         responsive: [
             {
               breakpoint: 768,
