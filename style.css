@@ -68,3 +68,7 @@ a.nav-link.active {
 .footer-md{
   color: #8EBE45 !important;
 }
+span.price.d-block.w-100 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
