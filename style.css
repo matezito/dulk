@@ -57,6 +57,10 @@ img.img-fluid.logo-footer {
   background-color: #8EBE45;
   border-color:#8EBE45
 }
+.btn-light{
+  border-color:#8EBE45;
+  color: #8EBE45;
+}
 a.nav-link.active {
   color: #8EBE45 !important;
   font-weight: normal;
