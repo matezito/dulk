@@ -72,3 +72,6 @@ span.price.d-block.w-100 {
   font-size: 1.2rem;
   font-weight: bold;
 }
+.product, .cast {
+  padding: 10px;
+}

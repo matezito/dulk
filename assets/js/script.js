@@ -1,6 +1,5 @@
 $(document).ready(function () {
   const options = {
-    centerPadding: "60px",
     slidesToShow: 4,
     slidesToScroll: 4,
     autoplay: true,
