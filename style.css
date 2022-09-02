@@ -75,3 +75,19 @@ span.price.d-block.w-100 {
 .product, .cast {
   padding: 10px;
 }
+#dialog-content{
+  max-height: 500px;
+  overflow-y: scroll;
+}
+#dialog-content::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+#dialog-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+ 
+#dialog-content::-webkit-scrollbar-thumb {
+  background-color: #8EBE45;
+  outline: 1px solid #8EBE45;
+}
