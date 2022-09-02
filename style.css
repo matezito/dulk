@@ -48,3 +48,20 @@ img.img-fluid.logo-footer {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.body-clean {
+  background-image: url('./assets/images/backgound3-2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn-success {
+  background-color: #8EBE45;
+  border-color:#8EBE45
+}
+a.nav-link.active {
+  color: #8EBE45 !important;
+  font-weight: normal;
+  text-decoration: underline;
+}
+.name-char{
+  text-align: center;
+}

@@ -11,11 +11,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="black bg-dark body-100">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="black bg-dark body-100 body-clean">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
                 <img src="./assets/images/Logo.svg" alt="Marvel" class="img-fluid logo">
@@ -33,7 +35,7 @@
                         <a class="nav-link" href="./story.html">The Story</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link"  active href="./cast.html">The Cast</a>
+                        <a class="nav-link active" active href="./cast.html">The Cast</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">SHOP</a>
@@ -46,26 +48,33 @@
         </div>
     </nav>
     <div class="container">
-        <div class="row flex-row-reverse">
-            <div class="col-md-6 col-12 main-img">
-                <img src="./assets/images/Hulk_(2540708438).jpg" alt="Hulk" class="img-fluid">
-            </div>
-            <div class="col-md-6 col-12 main-text mt-4 mt-md-0 text-center text-md-start">
-                <h1>Movie Title</h1>
-                <span class="subtitle"><strong>Release date</strong> Movie tags like action, superhero, puppies</span>
-                <div class="text-content mt-4">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem dolore illum minima! Expedita nihil
-                    commodi doloribus, aut cum autem quod eius nam ab cupiditate voluptatum exercitationem corporis
-                    voluptatibus natus accusantium dicta cumque possimus quaerat dolorem? Possimus distinctio blanditiis
-                    earum provident deserunt quam consequuntur, sit reprehenderit dicta! Dolores illum ut cupiditate
-                    perspiciatis voluptatum corrupti repellendus aperiam dolor. Quidem atque sed hic dolores ea
-                    dignissimos sit sint praesentium, facere consequuntur repellendus voluptates inventore deleniti
-                    dicta quaerat facilis excepturi placeat quisquam obcaecati laborum asperiores. Ipsam neque voluptas
-                    quidem cum, pariatur sint unde quibusdam earum itaque non quae sit, blanditiis voluptatum totam
-                    obcaecati nemo.
+        <div class="row">
+            <div class="col-12 cast-carousel">
+                <div class="cast rounded p-2">
+                    <img src="./assets/images/mark.png" class="img-fluid">
+                    <span class="name-char w-100 d-block pt-2">Mark Ruffalo as <strong>Hulk</strong></span>
+                </div>
+                <div class="cast rounded p-2">
+                    <img src="./assets/images/dulk.png" class="img-fluid">
+                    <span class="name-char w-100 d-block pt-2">Firulais as <strong>Dulk</strong></span>
+                </div>
+                <div class="cast rounded p-2">
+                    <img src="./assets/images/dog-thanos.png" class="img-fluid">
+                    <span class="name-char w-100 d-block pt-2">Angry Firulais as <strong>Pawpower</strong></span>
+                </div>
+                <div class="cast rounded p-2">
+                    <img src="./assets/images/placeholder.png" class="img-fluid">
+                    <span class="name-char w-100 d-block pt-2">The <strong>Text</strong></span>
+                </div>
+                <div class="cast rounded p-2">
+                    <img src="./assets/images/placeholder.png" class="img-fluid">
+                    <span class="name-char w-100 d-block pt-2">The <strong>Text</strong></span>
+                </div>
+                <div class="cast rounded p-2">
+                    <img src="./assets/images/placeholder.png" class="img-fluid">
+                    <span class="name-char w-100 d-block pt-2">The <strong>Text</strong></span>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -105,6 +114,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
