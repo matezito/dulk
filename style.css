@@ -90,4 +90,5 @@ span.price.d-block.w-100 {
 #dialog-content::-webkit-scrollbar-thumb {
   background-color: #8EBE45;
   outline: 1px solid #8EBE45;
+  border-radius: 10px;
 }
