@@ -60,8 +60,8 @@ $(document).ready(function () {
   </svg>`);
 
   Swal.fire({
-    title: 'Gracias',
-    text: `El producto ${product} fue agregado.`,
+    title: 'Thank you!',
+    text: `The product ${product} was added.`,
     icon: 'success',
     confirmButtonText: 'Cool'
   })
