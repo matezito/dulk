@@ -43,6 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="./subscribe.html">subscribe</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="cart-icon"></a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -56,66 +59,74 @@
                 <div class="product">
                     <img src="./assets/images/product.png" class="img-fluid rounded">
                     <span class="d-block w-100 text-center text-light mt-2 mb-2">
-                        <strong>Hulk</strong>
+                        <strong>Hulk 1</strong>
                         <span class="price d-block w-100">$ 10</span>
                     </span>
-                    <p class="text-center"><a href="#" class="btn btn-success">Buy now!</a></p>
+                    <p class="text-center"><a href="#" data-id="1" data-price="10" data-product="Hulk 1"
+                            class="btn btn-success buy-product">Buy now!</a></p>
                 </div>
                 <div class="product">
                     <img src="./assets/images/product.png" class="img-fluid rounded">
                     <span class="d-block w-100 text-center text-light mt-2 mb-2">
-                        <strong>Hulk</strong>
-                        <span class="price d-block w-100">$ 10</span>
+                        <strong>Hulk 2</strong>
+                        <span class="price d-block w-100">$ 98</span>
                     </span>
-                    <p class="text-center"><a href="#" class="btn btn-success">Buy now!</a></p>
+                    <p class="text-center"><a href="#" data-id="2" data-price="98" data-product="Hulk 2"
+                            class="btn btn-success buy-product">Buy now!</a></p>
                 </div>
                 <div class="product">
                     <img src="./assets/images/product.png" class="img-fluid rounded">
                     <span class="d-block w-100 text-center text-light mt-2 mb-2">
-                        <strong>Hulk</strong>
-                        <span class="price d-block w-100">$ 10</span>
+                        <strong>Hulk 3</strong>
+                        <span class="price d-block w-100">$ 5</span>
                     </span>
-                    <p class="text-center"><a href="#" class="btn btn-success">Buy now!</a></p>
+                    <p class="text-center"><a href="#" data-id="3" data-price="5" data-product="Hulk 3"
+                            class="btn btn-success buy-product">Buy now!</a></p>
                 </div>
                 <div class="product">
                     <img src="./assets/images/product.png" class="img-fluid rounded">
                     <span class="d-block w-100 text-center text-light mt-2 mb-2">
-                        <strong>Hulk</strong>
-                        <span class="price d-block w-100">$ 10</span>
+                        <strong>Hulk 4</strong>
+                        <span class="price d-block w-100">$ 106</span>
                     </span>
-                    <p class="text-center"><a href="#" class="btn btn-success">Buy now!</a></p>
+                    <p class="text-center"><a href="#" data-id="4" data-price="106" data-product="Hulk 4"
+                            class="btn btn-success buy-product">Buy now!</a></p>
                 </div>
                 <div class="product">
                     <img src="./assets/images/product.png" class="img-fluid rounded">
                     <span class="d-block w-100 text-center text-light mt-2 mb-2">
-                        <strong>Hulk</strong>
-                        <span class="price d-block w-100">$ 10</span>
+                        <strong>Hulk 5</strong>
+                        <span class="price d-block w-100">$ 24</span>
                     </span>
-                    <p class="text-center"><a href="#" class="btn btn-success">Buy now!</a></p>
+                    <p class="text-center"><a href="#" data-id="5" data-price="24" data-product="Hulk 5"
+                            class="btn btn-success buy-product">Buy now!</a></p>
                 </div>
                 <div class="product">
                     <img src="./assets/images/product.png" class="img-fluid rounded">
                     <span class="d-block w-100 text-center text-light mt-2 mb-2">
-                        <strong>Hulk</strong>
-                        <span class="price d-block w-100">$ 10</span>
+                        <strong>Hulk 6</strong>
+                        <span class="price d-block w-100">$ 56</span>
                     </span>
-                    <p class="text-center"><a href="#" class="btn btn-success">Buy now!</a></p>
+                    <p class="text-center"><a href="#" data-id="6" data-price="56" data-product="Hulk 6"
+                            class="btn btn-success buy-product">Buy now!</a></p>
                 </div>
                 <div class="product">
                     <img src="./assets/images/product.png" class="img-fluid rounded">
                     <span class="d-block w-100 text-center text-light mt-2 mb-2">
-                        <strong>Hulk</strong>
-                        <span class="price d-block w-100">$ 10</span>
+                        <strong>Hulk 7</strong>
+                        <span class="price d-block w-100">$ 248</span>
                     </span>
-                    <p class="text-center"><a href="#" class="btn btn-success">Buy now!</a></p>
+                    <p class="text-center"><a href="#" data-id="7" data-price="248" data-product="Hulk 7"
+                            class="btn btn-success buy-product">Buy now!</a></p>
                 </div>
                 <div class="product">
                     <img src="./assets/images/product.png" class="img-fluid rounded">
                     <span class="d-block w-100 text-center text-light mt-2 mb-2">
-                        <strong>Hulk</strong>
-                        <span class="price d-block w-100">$ 10</span>
+                        <strong>Hulk 8</strong>
+                        <span class="price d-block w-100">$ 100</span>
                     </span>
-                    <p class="text-center"><a href="#" class="btn btn-success">Buy now!</a></p>
+                    <p class="text-center"><a href="#" data-id="8" data-price="100" data-product="Hulk 8"
+                            class="btn btn-success buy-product">Buy now!</a></p>
                 </div>
             </div>
         </div>
@@ -159,6 +170,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
