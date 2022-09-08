@@ -29,16 +29,20 @@ $(document).ready(function () {
   $(".shop-products").slick(options);
 
   $(document).ready(function() {
-    const cart = JSON.parse(localStorage.getItem("hulk-cart")).length;
-    console.log(cart)
-    if(cart > 0) {
-      $(
-        "#cart-icon"
-      ).html(`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
-      <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-      <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/> <span class="badge text-bg-secondary" id="cart-count">${cart}</span>
-    </svg>`)
+    const items = localStorage.getItem("hulk-cart");
+    if(items != null ){
+      const cart = JSON.parse(items).length;
+      console.log(cart)
+      if(cart > 0) {
+        $('#cart-count').text(cart);
+        $('#cart-content').html(`<span class="dropdown-item cart-item">Products in cart: ${cart}</span>`);
+        $('.empty-cart').removeClass('d-none');
+        return
+      }
     }
+   
+    $('#cart-content').html(`<span class="dropdown-item cart-item">Cart is empty</span>`);
+    
   })
 
   $(document).on("click", ".buy-product", function (e) {
@@ -52,12 +56,6 @@ $(document).ready(function () {
       },
     ];
 
-    $(
-      "#cart-icon"
-    ).html(`<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
-    <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/> <span class="badge text-bg-secondary" id="cart-count"></span>
-  </svg>`);
 
   Swal.fire({
     title: 'Thank you!',
@@ -69,6 +67,8 @@ $(document).ready(function () {
     let cart = localStorage.getItem("hulk-cart");
     if (cart == null) {
       localStorage.setItem("hulk-cart", JSON.stringify(products));
+      $('#cart-content').html(`<span class="dropdown-item cart-item">Products in cart: 1</span>`);
+      $('.empty-cart').removeClass('d-none');
       $('#cart-count').text(1);
       return;
     }
@@ -87,5 +87,12 @@ $(document).ready(function () {
 
     const items = JSON.parse(localStorage.getItem("hulk-cart"));
     $('#cart-count').text(items.length)
+    $('#cart-content').html(`<span class="dropdown-item cart-item">Products in cart: ${items.length}</span>`);
+  });
+  $(document).on('click', '.empty-cart', function() {
+    localStorage.removeItem("hulk-cart");
+    $('#cart-count').text('');
+    $('#cart-content').html(`<span class="dropdown-item cart-item">Cart is empty</span>`);
+    $('.empty-cart').addClass('d-none');
   });
 });

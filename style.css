@@ -96,3 +96,9 @@ span.price.d-block.w-100 {
   outline: 1px solid #8EBE45;
   border-radius: 10px;
 }
+.cart-item{
+  font-size: .8rem;
+}
+span.empty-cart.cart-item.btn.btn-warning.btn-sm {
+  font-size: 0.6rem;
+}
